@@ -12,13 +12,13 @@ addLayer("exp", {
 	baseResource: "points", // Name of resource prestige is based on
 	baseAmount() {return player.points}, // Get the current amount of baseResource
 	type: "static", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-	exponent: 0.5, // Prestige currency exponent
+	exponent: 0.75, // Prestige currency exponent
 	gainMult() { // Calculate the multiplier for main currency from bonuses
 	    mult = new Decimal(1)
 	    return mult
 	},
 	gainExp() { // Calculate the exponent on main currency from bonuses
-	    return new Decimal(4)
+	    return new Decimal(0.5)
 	},
 	row: 0, // Row the layer is in on the tree (0 is the first row)
 	branches: ["inf", "eter"],
@@ -40,14 +40,14 @@ addLayer("inf", {
 	resource: "∞", // Name of prestige currency
 	baseResource: "points", // Name of resource prestige is based on
 	baseAmount() {return player.points}, // Get the current amount of baseResource
-	type: "static", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-	exponent: 4, // Prestige currency exponent
+	type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
+	exponent: 0, // Prestige currency exponent
 	gainMult() { // Calculate the multiplier for main currency from bonuses
 	    mult = new Decimal(1)
 	    return mult
 	},
 	gainExp() { // Calculate the exponent on main currency from bonuses
-	    return new Decimal(2).pow(63)
+	    return new Decimal(4)
 	},
 	row: 1, // Row the layer is in on the tree (0 is the first row)
 	branches: ["eter"],
@@ -69,14 +69,14 @@ addLayer("eter", {
 	resource: "∑", // Name of prestige currency
 	baseResource: "∞", // Name of resource prestige is based on
 	baseAmount() {return player.inf.points}, // Get the current amount of baseResource
-	type: "static", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-	exponent: 4, // Prestige currency exponent
+	type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
+	exponent: 0, // Prestige currency exponent
 	gainMult() { // Calculate the multiplier for main currency from bonuses
 	    mult = new Decimal(1)
 	    return mult
 	},
 	gainExp() { // Calculate the exponent on main currency from bonuses
-	    return new Decimal(2).pow(63)
+	    return new Decimal(4)
 	},
 	row: 2, // Row the layer is in on the tree (0 is the first row)
 	hotkeys: [
