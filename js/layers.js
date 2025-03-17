@@ -21,7 +21,7 @@ addLayer("exp", {
 	    return new Decimal(0.5)
 	},
 	row: 0, // Row the layer is in on the tree (0 is the first row)
-	branches: ["inf", "eter"],
+	branches: ["inf"],
 	hotkeys: [
 	    {key: "e", description: "E: Reset for exponentiators", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
 	],
