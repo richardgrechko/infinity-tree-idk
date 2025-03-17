@@ -23,7 +23,7 @@ addLayer("exp", {
 	row: 0, // Row the layer is in on the tree (0 is the first row)
 	branches: ["inf", "eter"],
 	hotkeys: [
-	    {key: "e", description: "e: Reset for exponentiators", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+	    {key: "e", description: "E: Reset for exponentiators", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
 	],
 	layerShown(){return true}
 })
