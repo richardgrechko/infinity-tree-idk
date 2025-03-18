@@ -145,12 +145,12 @@ addLayer("quantum", {
 addLayer("hypetr", {
 	name: "hypereternity", // This is optional, only used in a few places, If absent it just uses the layer id.
 	symbol: "∑+", // This appears on the layer's node. Default is the id with the first letter capitalized
-	position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+	position: 1, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
 	startData() { return {
         	unlocked: true,
 		points: new Decimal(0),
 	}},
-	color: "#a040c7",
+	color: "#52119b",
 	requires: new Decimal(2).pow(32).sub(1), // Can be a function that takes requirement increases into account
 	resource: "∑+", // Name of prestige currency
 	baseResource: "∑", // Name of resource prestige is based on
@@ -172,8 +172,8 @@ addLayer("hypetr", {
 })
 addLayer("ultra", {
 	name: "ultrafinity", // This is optional, only used in a few places, If absent it just uses the layer id.
-	symbol: "∞+", // This appears on the layer's node. Default is the id with the first letter capitalized
-	position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+	symbol: "∞++", // This appears on the layer's node. Default is the id with the first letter capitalized
+	position: 2, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
 	startData() { return {
         	unlocked: true,
 		points: new Decimal(0),
