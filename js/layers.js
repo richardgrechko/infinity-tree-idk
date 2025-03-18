@@ -150,7 +150,7 @@ addLayer("hypetr", {
         	unlocked: true,
 		points: new Decimal(0),
 	}},
-	color: "#52119b",
+	color: "#651aba",
 	requires: new Decimal(2).pow(32).sub(1), // Can be a function that takes requirement increases into account
 	resource: "∑+", // Name of prestige currency
 	baseResource: "∑", // Name of resource prestige is based on
@@ -178,7 +178,7 @@ addLayer("ultra", {
         	unlocked: true,
 		points: new Decimal(0),
 	}},
-	color: "#ad6e20",
+	color: "#995e15",
 	requires: new Decimal(2).pow(31).sub(1), // Can be a function that takes requirement increases into account
 	resource: "∞++", // Name of prestige currency
 	baseResource: "∞+", // Name of resource prestige is based on
