@@ -17,7 +17,10 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>βv1.0</h3><br>
+	<h3>βv1.0.1</h3><br>
+		- added transfinity, ultrafinity, hyper-eternity and quantum because why not<br>
+		- changed gain formula<br>
+	<h3>βv1.0.0</h3><br>
 		- i dont know what to say anymore lmfao<br>`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
@@ -40,7 +43,7 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(2).pow(player.exp.points).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2)).pow(player.quantum.points.add(1))
+	let gain = new Decimal(2).pow(player.exp.points).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2))
 	return gain
 }
 
