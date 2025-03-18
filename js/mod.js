@@ -40,7 +40,7 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(4).pow(player.exp.points.pow(0.95)).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2)).pow(player.quantum.points.add(1))
+	let gain = new Decimal(2).pow(player.exp.points).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2)).pow(player.quantum.points.add(1))
 	return gain
 }
 
