@@ -17,6 +17,8 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+	<h3>βv1.0.2</h3><br>
+		- made it so you gain (quantum+1) exponentiators<br>
 	<h3>βv1.0.1</h3><br>
 		- added transfinity, ultrafinity, hyper-eternity and quantum because why not<br>
 		- changed gain formula<br>
