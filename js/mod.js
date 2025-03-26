@@ -17,6 +17,8 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+	<h3>βv1.0.3</h3><br>
+		- changed exponentiator to multiplier sry<br>
 	<h3>βv1.0.2</h3><br>
 		- made it so you gain (quantum+1) exponentiators<br>
 	<h3>βv1.0.1</h3><br>
@@ -45,7 +47,7 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(2).pow(player.exp.points).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2))
+	let gain = new Decimal(1).mul(player.mul.points.add(1)).mul(player.inf.points.add(1)).mul(player.trans.points.add(1)).mul(player.ultra.points.add(1)).mul(player.eter.points.add(1).pow(2)).mul(player.hypetr.points.add(1).pow(2))
 	return gain
 }
 
